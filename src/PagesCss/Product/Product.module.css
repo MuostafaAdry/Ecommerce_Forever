@@ -1,0 +1,122 @@
+.Produstmain {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: start;
+}
+
+.img_container {
+  width: 100%;
+}
+
+.img_container .img {
+  width: 100%;
+}
+
+.product_name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  color: #3D3D3D;
+}
+
+.product_stars {
+  gap: 5px;
+}
+
+.star {
+  width: 18px;
+  margin: 7px 1px;
+}
+
+.price {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #2A2A2A;
+}
+
+.sizes {
+  display: inline-block;
+}
+
+.size {
+  background: #FBFBFB;
+  border: 1px solid #EBEBEB;
+  padding: 4px 13px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.Counter_container {
+  width: 40%;
+  margin-top: 1vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Counters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Counters_btn {
+  margin: 0px 10px;
+  padding: 10px;
+  background: #FBFBFB;
+  border: 1px solid #EBEBEB;
+}
+
+.addbtn {
+  display: block;
+  background: #000000;
+  color: white;
+  text-align: center;
+  min-width: 150px;
+  border: none;
+  padding: 8px;
+  margin: 2vw 0vw;
+}
+
+.hr {
+  max-width: 500px;
+  height: 1px;
+  left: 962px;
+  top: 680px;
+}
+
+.Describtion_review {
+  margin-top: 5vw;
+}
+
+.Description {
+  display: inline;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  border-radius: 0px;
+  padding: 12px;
+}
+
+.Reviews {
+  padding: 12px;
+  display: inline;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  background: #FBFBFB;
+  border-radius: 0px;
+}
+
+.Describtionandreview_titles {
+  margin-top: 0.7vw;
+  border: 1px solid #D0D0D0;
+  padding: 2vw;
+}/*# sourceMappingURL=Product.module.css.map */

@@ -1,0 +1,51 @@
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #fec3fe;
+}
+
+.form {
+  background-color: white;
+  min-width: 40%;
+  padding-top: 2vw;
+}
+
+.form_title {
+  margin-left: 6vw;
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.form_input {
+  display: block;
+  min-width: 70%;
+  margin: auto;
+  margin-bottom: 1vw;
+  padding: 0.5vw;
+}
+
+.form_btn {
+  color: white;
+  background-color: orangered;
+  padding: 0.5vw;
+  display: block;
+  max-width: 40%;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form_link {
+  margin: 1vw 0vw;
+  margin-left: 6vw;
+}
+
+.form_click_here {
+  border-bottom: 1px solid black;
+  font-weight: 550;
+  cursor: pointer;
+}/*# sourceMappingURL=Login.module.css.map */

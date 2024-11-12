@@ -1,0 +1,66 @@
+.title_div {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.title_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #343434;
+}
+
+.title_line {
+  margin-top: 15px;
+  width: 50px;
+  height: 2px;
+  background: #252525;
+  border-radius: 10px;
+}
+
+.span {
+  margin-right: 1vw;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #707070;
+}
+
+.ProductProprites {
+  display: flex;
+}
+
+.Price_size {
+  margin-left: 1vw;
+}
+
+.img {
+  width: 100px;
+}
+
+.Price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #494949;
+}
+
+.size {
+  padding: 0.5vw;
+  border: 1px solid black;
+  color: #1D1D1D;
+  margin-left: 1vw;
+}/*# sourceMappingURL=Cart.module.css.map */

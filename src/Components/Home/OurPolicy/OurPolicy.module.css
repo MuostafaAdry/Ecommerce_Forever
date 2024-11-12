@@ -1,0 +1,73 @@
+.policy_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 8vw;
+}
+
+.logo_img {
+  margin-bottom: 1vw;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #373737;
+}
+
+.prag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #898989;
+}
+
+.letterBox_container {
+  margin-top: 8vw;
+}
+
+.letterBox_header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 43px;
+  color: #373737;
+}
+
+.letterBox_text {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #9A9A9A;
+}
+
+.letterBox_input {
+  box-sizing: border-box;
+  max-width: 724px;
+  height: 62px;
+  left: 607px;
+  top: 3065px;
+  border: 1px solid #C7C7C7;
+  padding: 0vw 1vw;
+}
+
+.textbox_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letterBox_submitbtn {
+  width: 171px;
+  height: 62px;
+  left: 1160px;
+  top: 3065px;
+  background: #000000;
+  color: white;
+}/*# sourceMappingURL=OurPolicy.module.css.map */

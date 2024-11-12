@@ -1,0 +1,89 @@
+
+.filter_container1,.filter_container2{
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgb(51, 50, 50);
+}
+.filter_title{
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #343434;
+
+
+}
+.filter_icon{
+    cursor: pointer;
+    font-weight: 550;
+    margin-left: 10px;
+    max-width: 10px !important;
+}
+.check_input{
+    gap: 10px;
+    margin-right: 10px;
+}
+// Center_colection
+.Center_colection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.collectio_title{
+ 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #343434;
+    
+    
+    }
+.header_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.line{
+width: 40px;
+height: 2px;
+margin-top: 20px;
+background: #252525;
+border-radius: 10px;
+
+    
+    }
+    
+    .span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #707070;
+}
+.select{
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #C8C8C8;
+border-radius: 6px;
+
+}
+.product_img{
+    width: 100%;
+}

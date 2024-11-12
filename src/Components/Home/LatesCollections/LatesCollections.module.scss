@@ -1,0 +1,56 @@
+.title_div{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_text{
+width: 382px;
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #343434;
+
+
+}
+.title_line{
+margin-top: 15px;
+width: 50px;
+height: 2px;
+left: calc(50% - 50px/2 + 222px);
+background: #252525;
+border-radius: 10px;
+
+}
+
+.span{
+width: 382px;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #707070;
+
+
+}
+.lorme{
+text-align: center;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #868686;
+}
