@@ -9,8 +9,13 @@
    background-color: white;
    min-width: 40%;
    padding-top: 2vw;
-   
-    
+}
+@media (max-width:700px ) {
+    .form{
+        background-color: white;
+        min-width: 90%;
+        padding-top: 2vw;
+    }     
 }
 .form_title{
     margin-left: 6vw;

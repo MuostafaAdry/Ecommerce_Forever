@@ -13,7 +13,6 @@ line-height: 32px;
 display: flex;
 align-items: center;
 text-transform: uppercase;
-
 color: #343434;
 
 
@@ -33,6 +32,7 @@ color: #343434;
     display: flex;
     justify-content: space-around;
     align-items: center;
+     
 }
 
 .collectio_title{
@@ -76,13 +76,33 @@ border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
     color: #707070;
+     
 }
 .select{
 padding: 10px;
 box-sizing: border-box;
 border: 1px solid #C8C8C8;
 border-radius: 6px;
+margin:0vw 0vw 1vw 18vw;
+}
+@media (max-width:700px){
+    .select{
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #C8C8C8;
+        border-radius: 6px;
+        margin:0vw 0vw 1vw 3vw;
+        }
 
+    .collectio_title,.span,.line{
+        font-size: 25px;
+        
+    }   
+    
+    .line{
+       
+        margin-right: 10vw;
+    } 
 }
 .product_img{
     width: 100%;

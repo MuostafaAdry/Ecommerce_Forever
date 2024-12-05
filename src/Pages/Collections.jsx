@@ -162,26 +162,38 @@ const Collections = ({ SearchValue, ShowSearch }) => {
           </Col>
           <Col lg={9} md={9} sm={12}>
             <div className={Collectionclass.Center_colection}>
-              <div className={Collectionclass.header_line}>
-                <h1 className={Collectionclass.span}>
-                  All{" "}
-                  <span className={Collectionclass.collectio_title}>
-                    Collections
-                  </span>{" "}
-                </h1>
-                <p className={Collectionclass.line}></p>
-              </div>
 
-              <div>
-                <select
-                  onChange={(e) => setsortType(e.target.value)}
-                  className={Collectionclass.select}
-                >
-                  <option value="relevant">Sort By:Relevant</option>
-                  <option value="Low-High">Sort By:Low To High</option>
-                  <option value="High-Low">Sort By: High To Low</option>
-                </select>
-              </div>
+              <Row>
+                <Col lg={6} md={6} sm={12}>
+                  <div className={Collectionclass.header_line}>
+                    <h1 className={Collectionclass.span}>
+                      All{" "}
+                      <span className={Collectionclass.collectio_title}>
+                        Collections
+                      </span>{" "}
+                    </h1>
+                    <p className={Collectionclass.line}></p>
+                  </div>
+
+                </Col>
+
+                <Col lg={6} md={6} sm={12}>
+
+                  <div>
+                    <select
+                      onChange={(e) => setsortType(e.target.value)}
+                      className={Collectionclass.select}
+                    >
+                      <option value="relevant">Sort By:Relevant</option>
+                      <option value="Low-High">Sort By:Low To High</option>
+                      <option value="High-Low">Sort By: High To Low</option>
+                    </select>
+                  </div>
+                </Col>
+              </Row>
+
+
+
             </div>
             <Container>
               <Row>

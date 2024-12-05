@@ -12,15 +12,15 @@ import cart_icon from "../../assets/frontend_assets/cart_icon.png";
 import { useSelector } from "react-redux";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
-const Navigation = ({ setShowSearch ,ShowSearch}) => {
+const Navigation = ({ setShowSearch, ShowSearch }) => {
   const NavCounter = useSelector((state) => state.productsitems.CartProducts);
   const counterNumber = NavCounter.length;
   const navigate = useNavigate();
- 
+
   const handelCarticon = () => {
     if (counterNumber > 0) {
       navigate("/Cart");
-     
+
     } else {
       toast.success("Your Cart is empty");
     }
@@ -46,52 +46,40 @@ const Navigation = ({ setShowSearch ,ShowSearch}) => {
                 Collections
               </Link>
 
-              <Link className={Navbarclass.Nav_link} to="/About">
-                About
-              </Link>
-              <Link className={Navbarclass.Nav_link} to="/Contact">
-                Contact
-              </Link>
+
             </Nav>
 
             <div className={Navbarclass.Nav_right}>
-              <NavDropdown
-                title={
-                  <img
-                    className={Navbarclass.Nav_icon}
-                    src={profile_icon}
-                    alt=""
-                  />
-                }
-                id="navbarScrollingDropdown"
-              >
-                <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
-                <NavDropdown.Item to="#">
-                  <Link to="/Login">Login</Link>
-                </NavDropdown.Item>
-              </NavDropdown>
-              <p className={Navbarclass.counterNumber} onClick={handelCarticon}>
+              <Link to='/Cart'><button className={Navbarclass.Login_btn}>Login</button></Link>
+
+              <div className={Navbarclass.counterNumber} onClick={handelCarticon}>
                 {counterNumber ? (
                   <div className="">{counterNumber}</div>
                 ) : (
                   <div className=""></div>
                 )}
-              </p>
-              <img
-                className={Navbarclass.search_icon}
-                src={search_icon}
-                alt=""
-                onClick={() => setShowSearch(!ShowSearch)}
-              />
+              </div>
+              <div className="">
+                <img
+                  className={Navbarclass.search_icon}
+                  src={search_icon}
+                  alt=""
+                  onClick={() => setShowSearch(!ShowSearch)}
+                />
+              </div>
+              <div className="">
+                <img
+                  className={Navbarclass.cart_icon}
+                  onClick={handelCarticon}
+                  src={cart_icon}
+                  alt=""
+                />
+              </div>
+             
             </div>
           </Navbar.Collapse>
 
-          <img
-            className={Navbarclass.cart_icon}
-            onClick={handelCarticon}
-            src={cart_icon}
-            alt=""
-          />
+
         </Container>
       </Navbar>
     </div>

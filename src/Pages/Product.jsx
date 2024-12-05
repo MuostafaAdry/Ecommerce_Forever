@@ -34,21 +34,6 @@ const Product = () => {
     setSize(item);
   };
 
-  const dispatch = useDispatch();
-  const handelAddToCart = (ProductData, image) => {
-    if (!Size) {
-      toast.success("Select Size frist");
-    } else {
-      const Cartimage = image;
-      const name = ProductData.name;
-      const price = ProductData.price;
-      const id = ProductData._id;
-      const total = Counter * ProductData.price;
-      const CartProducts = { Size, Cartimage, total, name, price, id };
-      dispatch(StoreProducts(CartProducts));
-      toast.success("Added");
-    }
-  };
   const [Counter, setCounter] = useState(1);
 
   const handeldecremeint = () => {
@@ -57,7 +42,26 @@ const Product = () => {
       setCounter(Counter - 1);
     }
   };
-
+  
+  // to handel if the use add the same item twice in the remove case te two product with deledted together 
+  const [Id, setId] = useState(0)
+  const dispatch = useDispatch();
+  const handelAddToCart = (ProductData, image) => {
+    if (!Size) {
+      toast.success("Select Size frist");
+    } else {
+      const Cartimage = image;
+      const name = ProductData.name;
+      const price = ProductData.price;
+      const id = Id;
+      const amount = Counter;
+      const total = Counter * ProductData.price;
+      const CartProducts = { Size, Cartimage, total, name, amount, price, id };
+      dispatch(StoreProducts(CartProducts));
+      toast.success("Added");
+      setId(Id + 1)
+    }
+  };
   return ProductData ? (
     <div>
       <Container className={Productclass.Produstmain}>
@@ -114,7 +118,7 @@ const Product = () => {
                     </button>
                     <h3>{Counter}</h3>
                     <button
-                    
+
                       className={Productclass.Counters_btn}
                       onClick={() => setCounter(Counter + 1)}
                     >
@@ -122,7 +126,7 @@ const Product = () => {
                     </button>
                   </div>
 
-                 
+
                 </div>
 
                 <button
